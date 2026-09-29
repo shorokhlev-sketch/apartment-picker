@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="landing-dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tower 26 — апартаменты у моря в Батуми</title>
+<meta name="description" content="Жилая башня 26 этажей в Батуми. Подбор апартаментов онлайн.">
+<link rel="alternate" hreflang="ru" href="./index.html"><link rel="alternate" hreflang="en" href="./index.html?lang=en"><link rel="alternate" hreflang="x-default" href="./index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23161616'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia' font-size='16' fill='%23fff'%3E26%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a href="#main" class="skip" style="position:absolute;left:-9999px">К основному контенту</a>
+
+<header class="hdr">
+  <div class="container hdr__in">
+    <a class="logo" href="#top" aria-label="Tower 26">
+      <svg viewBox="0 0 154 41" fill="none" aria-hidden="true"><rect x="1" y="1" width="39" height="39" rx="3" fill="#FFFFFF"/><text x="20.5" y="27" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" fill="#161616">26</text><text x="50" y="22" font-family="Georgia, 'Times New Roman', serif" font-size="19" letter-spacing="3" fill="currentColor">TOWER</text><text x="50" y="35" font-family="'Nunito Sans', Arial, sans-serif" font-size="7" letter-spacing="1.2" fill="#BABABA">RESIDENCE</text></svg>
+    </a>
+    <nav class="hdr__nav" aria-label="Навигация">
+      <a href="#apartments" data-i18n="land.nav.apartments"></a>
+      <a href="#about" data-i18n="land.nav.about"></a>
+      <a href="#location" data-i18n="land.nav.location"></a>
+      <a href="#about" data-i18n="land.nav.developer"></a>
+      <a href="#form"><span class="live-dot"></span><span data-i18n="land.live"></span></a>
+    </nav>
+    <div class="hdr__right">
+      <div class="hbtn hbtn--lang" id="langBtn" role="button" tabindex="0" aria-haspopup="true"><span class="flag"></span><span id="langCode">RU</span><span class="caret"></span>
+        <div class="lang-dd" role="menu"><button type="button" data-lang="ru">RU</button><button type="button" data-lang="en">EN</button></div>
+      </div>
+      <a class="hbtn hbtn--primary" href="select.html" data-i18n="land.cta.pick"></a>
+      <a class="hbtn hbtn--secondary" href="#form" data-i18n="land.cta.contact"></a>
+      <button class="burger" id="burger" type="button" aria-label="Меню"></button>
+    </div>
+  </div>
+</header>
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer" aria-label="Меню">
+  <button class="drawer__close" id="drawerClose" type="button" aria-label="Закрыть"></button>
+  <a class="hbtn hbtn--primary" href="select.html" data-i18n="land.cta.pick"></a>
+  <a href="#apartments" data-i18n="land.nav.apartments"></a>
+  <a href="#about" data-i18n="land.nav.about"></a>
+  <a href="#location" data-i18n="land.nav.location"></a>
+  <a href="#form" data-i18n="land.nav.contacts"></a>
+  <a class="hbtn hbtn--secondary" href="#form" data-i18n="land.cta.contact"></a>
+  <button type="button" class="drawer__lang" id="drawerLang">EN</button>
+</aside>
+
+<main id="main">
+<section class="hero" id="top">
+  <img class="hero__img" src="assets/img/tower-dusk.webp" alt="">
+  <div class="container hero__in">
+    <div class="hero__stack">
+      <h1 data-i18n="land.hero.h1"></h1>
+      <p class="hero__lead" data-i18n="land.hero.lead"></p>
+      <p class="hero__lead2" data-i18n="land.hero.lead2"></p>
+      <div class="hero__hair"></div>
+      <div class="kpis">
+        <div class="kpi"><span class="kpi__label" data-i18n="land.hero.kpi.price"></span><span class="kpi__value" id="kpiPrice"></span></div>
+        <div class="kpi"><span class="kpi__label" data-i18n="land.hero.kpi.area"></span><span class="kpi__value" id="kpiArea"></span></div>
+        <div class="kpi"><span class="kpi__label" data-i18n="land.hero.kpi.deadline"></span><span class="kpi__value">2029</span></div>
+      </div>
+      <a class="hero__cta" href="#form" data-i18n="land.hero.cta"></a>
+    </div>
+  </div>
+</section>
+
+<section class="stats" aria-label="Цифры проекта">
+  <div class="container stats__in">
+    <div class="stat"><span class="stat__n">26</span><span class="stat__c" data-i18n="land.stat.floors"></span></div>
+    <div class="stat"><span class="stat__n">280</span><span class="stat__c" data-i18n="land.stat.units"></span></div>
+    <div class="stat"><span class="stat__n">90</span><span class="stat__c" data-i18n="land.stat.height"></span></div>
+    <div class="stat"><span class="stat__n">30</span><span class="stat__c" data-i18n="land.stat.parking"></span></div>
+  </div>
+</section>
+
+<section class="section section--dark" id="apartments">
+  <div class="container">
+    <div class="catalog__head">
+      <div><h2 class="h2" data-i18n="land.catalog.h2"></h2><p class="lead" data-i18n="land.catalog.lead"></p></div>
+      <a class="ghost" href="select.html" data-i18n="land.catalog.all"></a>
+    </div>
+    <div class="cards" id="cards"></div>
+  </div>
+</section>
+
+<section class="section section--light" id="about">
+  <div class="container how">
+    <div class="how__text">
+      <h2 class="h2" data-i18n="land.how.h2"></h2>
+      <p data-i18n="land.how.text"></p>
+    </div>
+    <div class="steps-wrap">
+      <div class="eyebrow" data-i18n="land.how.eyebrow"></div>
+      <div class="steps">
+        <div class="step"><div class="step__n">01</div><div><h3 class="step__h" data-i18n="land.step1.h"></h3><p class="step__t" data-i18n="land.step1.t"></p></div></div>
+        <div class="step"><div class="step__n">02</div><div><h3 class="step__h" data-i18n="land.step2.h"></h3><p class="step__t" data-i18n="land.step2.t"></p></div></div>
+        <div class="step"><div class="step__n">03</div><div><h3 class="step__h" data-i18n="land.step3.h"></h3><p class="step__t" data-i18n="land.step3.t"></p></div></div>
+        <div class="step"><div class="step__n">04</div><div><h3 class="step__h" data-i18n="land.step4.h"></h3><p class="step__t" data-i18n="land.step4.t"></p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" id="location">
+  <div class="container why">
+    <div><h2 class="h2" data-i18n="land.why.h2"></h2><p class="lead" data-i18n="land.why.t"></p><p class="lead" style="margin-top:12px">Адрес объекта · кадастр 00.00.00.000</p></div>
+    <img src="assets/img/site.webp" alt="" loading="lazy">
+  </div>
+</section>
+
+<section class="ctaband">
+  <div class="container">
+    <h2 data-i18n="land.cta2.h"></h2>
+    <div class="ctaband__btns"><a class="ghost-light" href="select.html" data-i18n="land.cta2.a"></a><a class="ghost-light" href="#location" data-i18n="land.cta2.b"></a></div>
+  </div>
+</section>
+
+<section class="section section--dark" id="form">
+  <div class="container contact">
+    <div>
+      <h2 class="h2" style="font:300 40px/62px var(--font-family-display)" data-i18n="land.form.h2"></h2>
+      <p class="lead" data-i18n="land.form.lead"></p>
+      <ul class="contact__list">
+        <li><span class="icon-wrap" id="icPhone"></span><a href="tel:+995000000000">+995 000 00 00 00</a></li>
+        <li><span class="icon-wrap" id="icMail"></span><a href="mailto:sales@example.com">sales@example.com</a></li>
+        <li><span class="icon-wrap" id="icPin"></span><span>Адрес офиса продаж · <span data-i18n="land.footer.hours"></span></span></li>
+      </ul>
+    </div>
+    <div class="form-panel" id="formPanel">
+      <h3 data-i18n="land.form.title"></h3>
+      <form id="leadForm" novalidate>
+        <label class="field"><span class="field__label" data-i18n="land.form.name"></span><input class="field__input" name="name" type="text" autocomplete="name" required></label>
+        <div class="field field--phone"><span class="field__label" data-i18n="land.form.phone"></span>
+          <div class="field__input"><span class="flagsel"><span class="flag"></span><span class="caret"></span><span class="code">+995</span></span><input name="phone" type="tel" inputmode="tel" placeholder="000 00 00 00" autocomplete="tel" required></div>
+        </div>
+        <label class="field field--select"><span class="field__label" data-i18n="land.form.interest"></span>
+          <select class="field__input" name="interest"><option value="" data-i18n="land.form.opt.0"></option><option value="1" data-i18n="land.form.opt.1"></option><option value="2" data-i18n="land.form.opt.2"></option><option value="3" data-i18n="land.form.opt.3"></option><option value="4" data-i18n="land.form.opt.4"></option></select>
+          <svg class="caret-svg" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 4L6 8L10 4"/></svg>
+        </label>
+        <button class="submit" type="submit" data-i18n="land.form.submit"></button>
+        <p class="note"><span data-i18n="land.form.note"></span> <a href="#" data-i18n="land.form.policy"></a></p>
+      </form>
+      <div class="form-ok"><p data-i18n="land.form.ok"></p><button class="ghost" type="button" id="formBack" data-i18n="land.form.back"></button></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="section--footer footer">
+  <div class="container footer__in">
+    <div class="footer__grid">
+      <div><a class="logo" href="#top" aria-label="Tower 26"><svg viewBox="0 0 154 41" fill="none" aria-hidden="true"><rect x="1" y="1" width="39" height="39" rx="3" fill="#FFFFFF"/><text x="20.5" y="27" text-anchor="middle" font-family="Georgia, serif" font-size="19" fill="#161616">26</text><text x="50" y="22" font-family="Georgia, serif" font-size="19" letter-spacing="3" fill="currentColor">TOWER</text><text x="50" y="35" font-family="'Nunito Sans', Arial, sans-serif" font-size="7" letter-spacing="1.2" fill="#BABABA">RESIDENCE</text></svg></a><p class="footer__desc" data-i18n="land.footer.desc"></p></div>
+      <div class="footer__col"><h4 data-i18n="land.footer.h1"></h4><a href="select.html" data-i18n="land.footer.l1"></a><a href="select.html#/floors" data-i18n="land.footer.l2"></a><a href="#location" data-i18n="land.footer.l3"></a></div>
+      <div class="footer__col"><h4 data-i18n="land.footer.h2"></h4><a href="#about" data-i18n="land.footer.l4"></a><a href="#location" data-i18n="land.footer.l5"></a><a href="#" data-i18n="land.footer.l6"></a></div>
+      <div class="footer__col"><h4 data-i18n="land.footer.h3"></h4><a href="tel:+995000000000">+995 000 00 00 00</a><a href="mailto:sales@example.com">sales@example.com</a><span>Адрес офиса продаж</span><span data-i18n="land.footer.hours"></span></div>
+    </div>
+    <div class="footer__hair"></div>
+    <div class="footer__bottom">
+      <span class="footer__copy" data-i18n="land.footer.copy"></span>
+      <div class="socials"><a class="soc" href="#" aria-label="Facebook"><svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4v2H8v4h2v6h4v-6h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a><a class="soc" href="#" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17" cy="7" r=".8" fill="currentColor"/></svg></a><a class="soc" href="#" aria-label="YouTube"><svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 8.5c-.2-1-.9-1.7-1.9-1.9C17.4 6.2 12 6.2 12 6.2s-5.4 0-7.1.4C3.9 6.8 3.2 7.5 3 8.5 2.6 10.2 2.6 12 2.6 12s0 1.8.4 3.5c.2 1 .9 1.7 1.9 1.9 1.7.4 7.1.4 7.1.4s5.4 0 7.1-.4c1-.2 1.7-.9 1.9-1.9.4-1.7.4-3.5.4-3.5s0-1.8-.4-3.5zM10 15V9l5 3-5 3z"/></svg></a></div>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/995000000000" target="_blank" rel="noopener" aria-label="WhatsApp" id="fab"></a>
+<div class="cookie" id="cookie"><span data-i18n="land.cookie"></span><button class="cookie__ok" type="button" id="cookieOk" data-i18n="land.cookie.ok"></button></div>
+<div class="sticky-bar"><a class="bar-call" href="tel:+995000000000"><span id="icBarPhone"></span><span data-i18n="land.bar.call"></span></a><a class="bar-consult" href="#form" data-i18n="land.bar.consult"></a></div>
+
+<script src="js/config.js"></script>
+<script src="data/units.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/util.js"></script>
+<script src="js/landing.js"></script>
+</body>
+</html>

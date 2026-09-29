@@ -1,0 +1,1 @@
+window.PLANS_DATA = {"units":{},"floorsIndex":{},"notes":"Empty in the public sample: js/plans.js draws schematic floor and unit plans. On the full site, floorsIndex maps a floor to data/floors/floor-N.json (unit and balcony polygons in plan pixel space), units maps a unit number to its plan WebP in assets/plans/, and pdfs lists units with a PDF sheet.","pdfs":[]};
