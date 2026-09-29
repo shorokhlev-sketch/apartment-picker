@@ -66,8 +66,8 @@
 
   // cookie
   const ck = q('#cookie');
-  try { if (localStorage.getItem('ap.cookie') === '1') ck.classList.add('closed'); } catch (e) {}
-  q('#cookieOk').addEventListener('click', () => { ck.classList.add('closed'); try { localStorage.setItem('ap.cookie', '1'); } catch (e) {} });
+  try { if (localStorage.getItem('ap.cookieConsent') === '1') ck.classList.add('closed'); } catch (e) {}
+  q('#cookieOk').addEventListener('click', () => { ck.classList.add('closed'); try { localStorage.setItem('ap.cookieConsent', '1'); } catch (e) {} });
 
   // форма
   const form = q('#leadForm');
