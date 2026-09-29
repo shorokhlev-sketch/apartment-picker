@@ -1,0 +1,20 @@
+{
+  "floorPages": {"firstFloor": 2, "lastFloor": 26, "firstPage": 0},
+  "slots": [
+    [608.9, 599.4, 1], [545.5, 599.4, 2], [494.8, 599.4, 3], [432.3, 599.4, 4],
+    [380.0, 599.4, 5], [174.2, 511.7, 6], [174.2, 378.2, 7], [315.4, 215.4, 8],
+    [402.2, 215.4, 9], [522.8, 215.4, 10], [822.1, 347.0, 11], [822.1, 481.5, 12]
+  ],
+  "slotAliases": [[383.8, 599.4, 5], [627.8, 599.4, 1]],
+  "officialAreas": {},
+  "project": {
+    "codename": "Tower 26",
+    "address": {"ru": "Адрес объекта", "en": "Project address"},
+    "cadastre": "00.00.00.000",
+    "developer": "Developer LLC",
+    "architect": "Architect",
+    "floors": 26,
+    "permit": {"number": "00.000000000", "issued": "2025-01-01", "validUntil": "2028-01-01"},
+    "contacts": {"whatsapp": "", "phone": ""}
+  }
+}
