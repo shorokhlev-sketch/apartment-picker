@@ -70,6 +70,13 @@
 
   // форма
   const form = q('#leadForm');
+  // Строка под кнопкой: «форма не подключена» или ошибка отправки; пустой текст убирает её.
+  function formNote(text) {
+    let n = form.querySelector('.form-offline');
+    if (!text) { if (n) n.remove(); return; }
+    if (!n) { n = U.el('p', { class: 'form-offline is-error', role: 'alert' }); form.appendChild(n); }
+    n.textContent = text;
+  }
   form.addEventListener('submit', e => {
     e.preventDefault();
     let ok = true;
@@ -77,13 +84,21 @@
     name.classList.toggle('is-error', !name.value.trim()); if (!name.value.trim()) ok = false;
     const digits = phone.value.replace(/\D/g, '');
     phone.closest('.field__input').classList.toggle('is-error', digits.length < 9); if (digits.length < 9) ok = false;
-    if (ok) {
-      q('#formPanel').classList.add('is-sent');
-      const interestMap = { 1: 'invest', 2: 'living', 3: 'rental', 4: 'other' };
-      if (window.leadTracker) window.leadTracker.lead({ name: name.value.trim(), phone: '+995' + digits.replace(/^995/, ''), interest: interestMap[form.elements.interest.value] || '', source: 'site_form' });
-    }
+    if (!ok) return;
+    // Без трекера (js/config.js) заявка никуда не уходит — так и говорим, а не показываем «спасибо».
+    if (!window.leadTracker) { formNote(U.t('app.lead.offline')); return; }
+    formNote('');
+    const interestMap = { 1: 'invest', 2: 'living', 3: 'rental', 4: 'other' };
+    const submit = form.querySelector('[type="submit"]'); submit.disabled = true;
+    Promise.resolve(window.leadTracker.lead({ name: name.value.trim(), phone: '+995' + digits.replace(/^995/, ''), interest: interestMap[form.elements.interest.value] || '', source: 'site_form' }))
+      .then(r => {
+        submit.disabled = false;
+        if (r && r.error) { formNote(U.t('app.lead.error')); return; }
+        q('#formPanel').classList.add('is-sent');
+      })
+      .catch(() => { submit.disabled = false; formNote(U.t('app.lead.error')); });
   });
-  q('#formBack').addEventListener('click', () => { q('#formPanel').classList.remove('is-sent'); form.reset(); });
+  q('#formBack').addEventListener('click', () => { q('#formPanel').classList.remove('is-sent'); form.reset(); formNote(''); });
 
   applyI18n();
 })();

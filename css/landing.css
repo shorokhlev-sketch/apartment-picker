@@ -148,6 +148,7 @@ body.menu-open .drawer { transform: translateX(0); }
 .submit:hover { background: var(--btn-submit-bg-hover); color: var(--fg-0); border-color: var(--line-1); }
 .note { margin: 19px 0 0; font: var(--text-note); color: var(--fg-2); text-align: center; }
 .note a { color: var(--fg-0); box-shadow: var(--shadow-underline); }
+.form-offline { margin: 12px 0 0; font: var(--text-note); color: var(--accent-alert); text-align: center; }
 .form-ok { display: none; }
 .form-panel.is-sent form { display: none; }
 .form-panel.is-sent .form-ok { display: block; }
