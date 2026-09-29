@@ -26,6 +26,7 @@
     let i = 0;
     types.forEach(t => {
       const list = units.filter(u => u.type === t);
+      if (!list.length) return; // типа нет в данных (в выборке нет 3br) — карточку не рисуем
       const min = Math.min.apply(null, list.map(u => u.price));
       const a0 = Math.min.apply(null, list.map(u => u.total)), a1 = Math.max.apply(null, list.map(u => u.total));
       box.appendChild(card(++i, IMG[t][0], IMG[t][1], U.t('land.type.' + t), U.t('land.card.desc.' + t), U.area(a0, false) + ' – ' + U.area(a1, false) + ' · ' + list.length, U.priceLanding(min), 'select.html#/?rooms=' + t));
