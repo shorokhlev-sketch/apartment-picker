@@ -12,6 +12,8 @@ This repo ships a sample of 3 floors (10, 11 and 22) with 32 units, so it runs l
 | --- | --- |
 | ![Unit page](docs/unit-page.webp) | ![3D view](docs/picker-3d.webp) |
 
+![Landing page](docs/landing.webp)
+
 ## Key technical decisions
 
 - No build step. Plain HTML, CSS and vanilla JS: 7 scripts with 1,600 lines (133 KB) of JS and 111 KB of CSS, unminified. Any static host serves it.
