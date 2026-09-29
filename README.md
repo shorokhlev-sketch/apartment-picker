@@ -2,6 +2,8 @@
 
 Sales site with an apartment picker for a 26-storey residential tower: landing, 3D facade view, floor plans, a 2D sales grid and unit pages.
 
+History: this is a public snapshot of a private repository (113 commits, 2 to 29 Sep 2026). Client details are replaced.
+
 It is the front end of a sales site for a 26-storey tower of about 280 apartments (codename Tower 26). It is for a developer's sales team and their buyers: a buyer filters units, finds one on the facade or a floor plan, opens its page and leaves a request.
 
 ![Floor plans view](docs/picker-floors.webp)
